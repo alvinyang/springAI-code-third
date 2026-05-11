@@ -20,4 +20,13 @@ public class MyAdvisorTest {
                         .call()
                         .content());
     }
+
+    @Test
+    public void test02(){
+        System.out.println(
+                chatClient.prompt()
+                        .user("违禁词B")
+                        .call()
+                        .content());
+    }
 }

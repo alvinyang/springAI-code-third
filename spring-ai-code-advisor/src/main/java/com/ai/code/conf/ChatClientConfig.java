@@ -1,5 +1,6 @@
 package com.ai.code.conf;
 
+import com.ai.code.advisor.FilterAdvisor;
 import com.ai.code.advisor.LogAdvisor;
 import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatModel;
 import jakarta.annotation.Resource;
@@ -16,7 +17,8 @@ public class ChatClientConfig {
     public ChatClient getChatClient() {
         return ChatClient.builder(dashScopeChatModel)
                 .defaultAdvisors(
-                        new LogAdvisor()
+                        new LogAdvisor(),
+                        new FilterAdvisor()
                 ) //指定chatClient的advisor
                 .build();
     }
