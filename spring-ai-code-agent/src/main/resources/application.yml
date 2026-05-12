@@ -1,0 +1,7 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${ANTHROPIC_AUTH_TOKEN}
+      chat:
+        options:
+          model: qwen3-max

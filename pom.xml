@@ -11,6 +11,7 @@
     <modules>
         <module>spring-ai-code-picture</module>
         <module>spring-ai-code-advisor</module>
+        <module>spring-ai-code-agent</module>
     </modules>
 
     <parent>
