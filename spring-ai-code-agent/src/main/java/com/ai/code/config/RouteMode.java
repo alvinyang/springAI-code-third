@@ -19,7 +19,7 @@ public class RouteMode {
         return ReactAgent.builder()
                 .name("writerArticleAgent")
                 .model(dashScopeChatModel)
-                .description("擅长创作各类文章，包括散文、诗歌等文学作品")
+                .description("擅长创作各类中文文章，包括散文、诗歌等文学作品")
                 .instruction("你是一个知名的作家，擅长写作和创作。请根据用户的提问进行回答。")
                 .outputKey("writer_output")
                 .build();
